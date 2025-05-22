@@ -11,20 +11,12 @@ const App = () => {
     formState: { errors },
     watch,
     setValue
-  } = useForm({
-    defaultValues: {
-      name: '',
-      number: '',
-      month: '',
-      year: '',
-      cvc: ''
-    }
-  });
+  } = useForm({ mode: 'onBlur' });
 
   const cardData = watch();
 
   const onSubmit = data => {
-    //envia al formulario
+    //envia al formulario?
     console.log(data);
   };
 
