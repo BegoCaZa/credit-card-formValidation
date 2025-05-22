@@ -8,7 +8,13 @@ import {
   StyledCardDate,
   StyledCardInfo
 } from './cardsContainer.styles.js';
-const CardsContainer = () => {
+const CardsContainer = ({ cardData }) => {
+  const {
+    name = 'Jane Appleseed',
+    number = '1234 5678 9123 4567',
+    month = '11',
+    year = '11'
+  } = cardData;
   return (
     <StyledCardsContainer>
       <StyledFrontCard>
@@ -17,10 +23,12 @@ const CardsContainer = () => {
           alt='Front Card'
         />
         <StyledLogo src='./assets/card-logo.svg' alt='Card Logo' />
-        <StyledCardNumber>000000000</StyledCardNumber>
+        <StyledCardNumber>{number}</StyledCardNumber>
         <StyledCardInfo>
-          <StyledCardName>BEGOÑA</StyledCardName>
-          <StyledCardDate>11/11</StyledCardDate>
+          <StyledCardName>{name.toUpperCase()}</StyledCardName>
+          <StyledCardDate>
+            {month || '00'}/{year || '00'}
+          </StyledCardDate>
         </StyledCardInfo>
       </StyledFrontCard>
     </StyledCardsContainer>

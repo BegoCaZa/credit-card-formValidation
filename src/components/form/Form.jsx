@@ -11,7 +11,7 @@ import {
 } from './form.styles';
 import { FORM_VALIDATIONS } from '../../constants/form_validations';
 
-const Form = ({ register, handleSubmit, errors, onSubmit, cardData }) => {
+const Form = ({ register, handleSubmit, errors, onSubmit }) => {
   //   const {
   //     handleSubmit,
   //     register,
