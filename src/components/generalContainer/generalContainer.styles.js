@@ -7,6 +7,7 @@ const StyledGeneralContainer = styled.div`
   justify-content: center;
   padding: 20px;
   min-height: 100vh;
+  gap: 20px;
 `;
 
 export { StyledGeneralContainer };

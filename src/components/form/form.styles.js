@@ -52,7 +52,6 @@ export const StyledErrorMessage = styled.span`
   font-size: 12px;
   text-align: left;
   width: 100%;
-  margin: 0;
 `;
 
 export const StyledButton = styled.button`
