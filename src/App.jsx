@@ -1,14 +1,16 @@
-import Button from './button/Button';
 import { GlobalStyles } from './styles/GlobalStyles';
+import { GeneralContainer } from './components/generalContainer/GeneralContainer';
+import { CardsContainer } from './components/cardsContainer/CardsContainer';
+import { Form } from './components/form/Form';
 
 const App = () => {
   return (
-    <>
+    // el fondo sera un before del cars container
+    <GeneralContainer>
       <GlobalStyles />
-      <h1>REACT</h1>
-      <Button color='lime' hoverColor='red' />
-      <Button color='orange' hoverColor='purple' />
-    </>
+      <CardsContainer />
+      <Form />
+    </GeneralContainer>
   );
 };
 
