@@ -11,15 +11,15 @@ import {
 } from './form.styles';
 import { FORM_VALIDATIONS } from '../../constants/form_validations';
 
-const Form = () => {
-  const {
-    handleSubmit,
-    register,
-    formState: { errors }
-  } = useForm({ mode: 'onBlur' });
+const Form = ({ register, handleSubmit, errors, onSubmit, cardData }) => {
+  //   const {
+  //     handleSubmit,
+  //     register,
+  //     formState: { errors }
+  //   } = useForm({ mode: 'onBlur' });
 
   return (
-    <StyledFormContainer onSubmit={handleSubmit(data => console.log(data))}>
+    <StyledFormContainer onSubmit={handleSubmit(onSubmit)}>
       <StyledInputContainer>
         <StyledInputLabel htmlFor='name'>Cardholder Name</StyledInputLabel>
         <StyledTextInput

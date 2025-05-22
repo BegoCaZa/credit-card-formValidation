@@ -2,22 +2,45 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import GeneralContainer from './components/generalContainer/GeneralContainer';
 import CardsContainer from './components/cardsContainer/CardsContainer';
 import Form from './components/form/Form';
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const App = () => {
-  const [cardData, setCardData] = useState({
-    name: '',
-    number: '',
-    month: '',
-    year: '',
-    cvc: ''
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch,
+    setValue
+  } = useForm({
+    defaultValues: {
+      name: '',
+      number: '',
+      month: '',
+      year: '',
+      cvc: ''
+    }
   });
+
+  const cardData = watch();
+
+  const onSubmit = data => {
+    //envia al formulario
+    console.log(data);
+  };
+
   return (
     // el fondo sera un before del cards container
     <GeneralContainer>
       <GlobalStyles />
       <CardsContainer cardData={cardData} />
-      <Form cardData={cardData} setCardData={setCardData} />
+      <Form
+        register={register}
+        handleSubmit={handleSubmit}
+        errors={errors}
+        onSubmit={onSubmit}
+        setValue={setValue}
+        cardData={cardData}
+      />
     </GeneralContainer>
   );
 };
