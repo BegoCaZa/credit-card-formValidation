@@ -20,6 +20,8 @@ const Form = ({ register, handleSubmit, errors, onSubmit }) => {
           id='name'
           placeholder='e.g. Jane Appleseed'
           {...register('name', FORM_VALIDATIONS.NAME)}
+          error={!!errors.name}
+          //   pasarlo a bolleano y lo reciba el style error
         />
         <StyledErrorMessage>{errors?.name?.message}</StyledErrorMessage>
       </StyledInputContainer>

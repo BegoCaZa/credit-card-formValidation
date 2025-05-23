@@ -3,15 +3,23 @@ import { COLORS } from '../../styles/color';
 
 export const StyledCardsContainer = styled.div`
   width: 100%;
+  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  background-image: url('/assets/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 export const StyledFrontCard = styled.div`
-  position: relative;
-  width: 90%;
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  width: 80%;
   display: flex;
+  z-index: 2;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
@@ -23,23 +31,23 @@ export const StyledBackgorundCardImage = styled.img`
 `;
 export const StyledLogo = styled.img`
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   width: 65px;
   z-index: 2;
 `;
 export const StyledCardNumber = styled.span`
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 20px;
-  font-size: 18px;
+  font-size: 16px;
   color: ${COLORS.white};
   letter-spacing: 2px;
 `;
 
 export const StyledCardInfo = styled.div`
   position: absolute;
-  top: 130px;
+  top: 120px;
   left: 20px;
   display: flex;
   flex-direction: row;
@@ -48,17 +56,20 @@ export const StyledCardInfo = styled.div`
 `;
 
 export const StyledCardName = styled.span`
-  font-size: 12px;
+  font-size: 10px;
   color: ${COLORS.white};
 `;
 export const StyledCardDate = styled.span`
-  font-size: 12px;
+  font-size: 10px;
   color: ${COLORS.white};
 `;
 
 export const StyledBackCard = styled.div`
-  position: relative;
-  width: 90%;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -67,7 +78,7 @@ export const StyledBackCard = styled.div`
 `;
 export const StyledCardCVC = styled.span`
   position: absolute;
-  top: 73px;
+  top: 63px;
   right: 38px;
   font-size: 12px;
   color: ${COLORS.white};

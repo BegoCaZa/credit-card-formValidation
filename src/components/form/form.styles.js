@@ -22,7 +22,7 @@ export const StyledInputContainer = styled.div`
 
 export const StyledInputLabel = styled.label`
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: ${COLORS.deepViolet};
   text-align: left;
   width: 100%;
@@ -32,6 +32,7 @@ export const StyledTextInput = styled.input`
   padding: 16px;
   border-radius: 10px;
   border: 1.5px solid ${COLORS.lightGrey};
+  ${({ error }) => (error ? `${COLORS.red}` : `${COLORS.lightGrey}`)};
   background-color: ${COLORS.white};
   font-size: 15px;
   color: ${COLORS.purplishGrey};

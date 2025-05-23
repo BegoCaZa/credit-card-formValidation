@@ -22,6 +22,7 @@ const defaultValues = {
 
 const CardsContainer = ({ cardData }) => {
   const { name, number, month, year, cvc } = cardData;
+  const formattedCardNumber = formatCardNumber(number);
   return (
     <StyledCardsContainer>
       <StyledFrontCard>
@@ -31,7 +32,9 @@ const CardsContainer = ({ cardData }) => {
         />
         <StyledLogo src='./assets/card-logo.svg' alt='Card Logo' />
         {/* si existe data, dibujala, sino dibuja la default */}
-        <StyledCardNumber>{number || defaultValues.number}</StyledCardNumber>
+        <StyledCardNumber>
+          {formattedCardNumber || defaultValues.number}
+        </StyledCardNumber>
         <StyledCardInfo>
           {/* si existe name,pasalo a mayusculas, dibujala, sino dibuja la default */}
           <StyledCardName>
@@ -53,6 +56,11 @@ const CardsContainer = ({ cardData }) => {
       </StyledBackCard>
     </StyledCardsContainer>
   );
+};
+
+const formatCardNumber = number => {
+  if (!number) return;
+  return number.match(/.{1,4}/g).join(' ');
 };
 export default CardsContainer;
 
