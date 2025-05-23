@@ -8,6 +8,12 @@ const StyledGeneralContainer = styled.div`
   padding: 20px;
   min-height: 100vh;
   gap: 70px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px 0px 0px;
+  }
 `;
 
 export { StyledGeneralContainer };

@@ -9,6 +9,11 @@ export const StyledFormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   background-color: ${COLORS.white};
+
+  @media (min-width: 768px) {
+    width: 40%;
+    min-height: 100vh;
+  }
 `;
 
 export const StyledInputContainer = styled.div`

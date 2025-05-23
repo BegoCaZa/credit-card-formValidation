@@ -12,6 +12,16 @@ export const StyledCardsContainer = styled.div`
   background-image: url('/assets/bg-main-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 768px) {
+    width: 500px;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('/assets/bg-main-desktop.png');
+    background-size: cover;
+    background-position: left;
+    padding: 0;
+  }
 `;
 export const StyledFrontCard = styled.div`
   position: absolute;
@@ -24,6 +34,13 @@ export const StyledFrontCard = styled.div`
   justify-content: flex-start;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.261);
+
+  @media (min-width: 768px) {
+    top: 50%;
+    left: 60%;
+    transform: translate(-30%, -100%);
+    width: 350px;
+  }
 `;
 export const StyledBackgorundCardImage = styled.img`
   display: block;
@@ -43,6 +60,11 @@ export const StyledCardNumber = styled.span`
   font-size: 16px;
   color: ${COLORS.white};
   letter-spacing: 2px;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    top: 100px;
+  }
 `;
 
 export const StyledCardInfo = styled.div`
@@ -53,15 +75,28 @@ export const StyledCardInfo = styled.div`
   flex-direction: row;
   width: 85%;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    top: 150px;
+    left: 20px;
+  }
 `;
 
 export const StyledCardName = styled.span`
   font-size: 10px;
   color: ${COLORS.white};
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 export const StyledCardDate = styled.span`
   font-size: 10px;
   color: ${COLORS.white};
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const StyledBackCard = styled.div`
@@ -75,6 +110,13 @@ export const StyledBackCard = styled.div`
   justify-content: flex-start;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.261);
+
+  @media (min-width: 768px) {
+    top: 60%;
+    left: 80%;
+    transform: translate(-20%, -20%);
+    width: 350px;
+  }
 `;
 export const StyledCardCVC = styled.span`
   position: absolute;
@@ -82,6 +124,11 @@ export const StyledCardCVC = styled.span`
   right: 38px;
   font-size: 12px;
   color: ${COLORS.white};
+
+  @media (min-width: 768px) {
+    top: 86px;
+    left: 270px;
+  }
 `;
 
 //    .front-card{
