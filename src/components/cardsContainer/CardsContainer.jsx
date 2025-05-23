@@ -2,35 +2,55 @@ import {
   StyledCardsContainer,
   StyledFrontCard,
   StyledLogo,
-  StyledBackgorundFrontImage,
+  StyledBackgorundCardImage,
   StyledCardNumber,
   StyledCardName,
   StyledCardDate,
-  StyledCardInfo
+  StyledCardInfo,
+  StyledBackCard,
+  StyledCardCVC
 } from './cardsContainer.styles.js';
+
+//no necesito que se pinten estos valores cada vez, mejor sacarlos de la funcion
+const defaultValues = {
+  name: 'Jane Appleseed',
+  number: '1234 5678 9123 4567',
+  month: '00',
+  year: '00',
+  cvc: '000'
+};
+
 const CardsContainer = ({ cardData }) => {
-  const {
-    name = 'Jane Appleseed',
-    number = '1234 5678 9123 4567',
-    month = '11',
-    year = '11'
-  } = cardData;
+  const { name, number, month, year, cvc } = cardData;
   return (
     <StyledCardsContainer>
       <StyledFrontCard>
-        <StyledBackgorundFrontImage
+        <StyledBackgorundCardImage
           src='./assets/bg-card-front.png'
           alt='Front Card'
         />
         <StyledLogo src='./assets/card-logo.svg' alt='Card Logo' />
-        <StyledCardNumber>{number}</StyledCardNumber>
+        {/* si existe data, dibujala, sino dibuja la default */}
+        <StyledCardNumber>{number || defaultValues.number}</StyledCardNumber>
         <StyledCardInfo>
-          <StyledCardName>{name.toUpperCase()}</StyledCardName>
+          {/* si existe name,pasalo a mayusculas, dibujala, sino dibuja la default */}
+          <StyledCardName>
+            {name?.toUpperCase() || defaultValues.name}
+          </StyledCardName>
           <StyledCardDate>
-            {month || '00'}/{year || '00'}
+            {month || defaultValues.month}/{year || defaultValues.year}
           </StyledCardDate>
         </StyledCardInfo>
       </StyledFrontCard>
+
+      <StyledBackCard>
+        <StyledBackgorundCardImage
+          src='./assets/bg-card-back.png'
+          alt='Back Card'
+        />
+        <StyledCardCVC>{cvc || defaultValues.cvc}</StyledCardCVC>
+        {/* <span class="card-cvc" id="card-cvc-display">000</span> */}
+      </StyledBackCard>
     </StyledCardsContainer>
   );
 };

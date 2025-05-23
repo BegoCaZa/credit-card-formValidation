@@ -54,7 +54,7 @@ export const StyledErrorMessage = styled.span`
   width: 100%;
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.input`
   width: 100%;
   padding: 16px;
   border-radius: 10px;

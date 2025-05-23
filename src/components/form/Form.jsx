@@ -1,4 +1,3 @@
-import { useForm } from 'react-hook-form';
 import {
   StyledFormContainer,
   StyledInputContainer,
@@ -12,12 +11,6 @@ import {
 import { FORM_VALIDATIONS } from '../../constants/form_validations';
 
 const Form = ({ register, handleSubmit, errors, onSubmit }) => {
-  //   const {
-  //     handleSubmit,
-  //     register,
-  //     formState: { errors }
-  //   } = useForm({ mode: 'onBlur' });
-
   return (
     <StyledFormContainer onSubmit={handleSubmit(onSubmit)}>
       <StyledInputContainer>
@@ -44,7 +37,7 @@ const Form = ({ register, handleSubmit, errors, onSubmit }) => {
       </StyledInputContainer>
       <StyledDateCVCContainer>
         <StyledInputContainer>
-          <StyledInputLabel htmlFor='mont'>Exp. Date (MM/YY)</StyledInputLabel>
+          <StyledInputLabel htmlFor='month'>Exp. Date (MM/YY)</StyledInputLabel>
           <StyledDateInputContainer>
             <StyledTextInput
               type='text'
@@ -75,7 +68,7 @@ const Form = ({ register, handleSubmit, errors, onSubmit }) => {
           <StyledErrorMessage>{errors?.cvc?.message}</StyledErrorMessage>
         </StyledInputContainer>
       </StyledDateCVCContainer>
-      <StyledButton type='submit'>Confirm</StyledButton>
+      <StyledButton type='submit' value={'Confirm'}></StyledButton>
     </StyledFormContainer>
   );
 };

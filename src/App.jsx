@@ -11,7 +11,9 @@ const App = () => {
     formState: { errors },
     watch,
     setValue
-  } = useForm({ mode: 'onBlur' });
+  } = useForm({
+    mode: 'onBlur'
+  });
 
   const cardData = watch();
 
