@@ -14,11 +14,19 @@
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este proyecto consiste en una interfaz web que desarrollé con React para validar formularios de tarjeta de crédito. La aplicación permite ingresar datos como el nombre del titular, número de tarjeta, fecha de expiración y código CVC, y se encarga de validar la información en tiempo real.
+
+Para los estilos utilicé la librería Styled Components, lo que me permitió estructurar el diseño de forma modular y clara. Para la validación del formulario implementé React Hook Form, que facilitó mucho el manejo de los inputs y las reglas de validación.
+
+El objetivo principal de este proyecto fue practicar y afianzar conceptos de React, especialmente relacionados con formularios, manejo de estado y diseño de interfaces modernas y funcionales.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este proyecto lo realicé por segunda vez. La primera vez lo hice con JavaScript puro, pero en esta ocasión decidí recrearlo con React, incorporando herramientas como Styled Components y React Hook Form por primera vez.
+
+Aunque fue un reto trabajar con estas librerías nuevas para mí, descubrí que la validación de datos fue mucho más eficiente y limpia utilizando React Hook Form. Me ayudó a entender mejor cómo optimizar formularios y evitar lógica redundante.
+
+Además, este ejercicio me permitió seguir practicando el manejo de estado en React y mejorar mi habilidad para aplicar Styled Components de forma más organizada. En general, fue una experiencia muy valiosa que me permitió consolidar mis conocimientos y avanzar en mi aprendizaje como desarrollador frontend.
 
 ## Tecnologías 🛠
 
@@ -28,35 +36,38 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
     <a href="https://es.wikipedia.org/wiki/React">
         <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React logo">
     </a>
+    <a href="https://react-hook-form.com/get-started">
+        <img src="design/react-hook-form-logo-e681fe273970a711a415b1f8ce13871c.png" alt="React Hook logo">
+    </a>
 </p>
 
 ## Capturas del proyecto
 
 <p>
-   <img src="" alt="Captura del proyecto">
-   <img src="" alt="Captura del proyecto">
-   <img src="" alt="Captura del proyecto">
+   <img src="design/desktop-overview.png" alt="Captura del proyecto">
+   <img src="design/mobile-overview.png" alt="Captura del proyecto">
+   <img src="design/mockup-phone.png" alt="Captura del proyecto">
 </p>
 
 ## Autor ✒️
 
-**TU NOMBRE**
+Begoña Calleja Zardain
 
 <ul>
     <li>
-        <a href="micorreo@midominio.com">micorreo@midominio.com</a>
+        <a href="begoxcz@hotmail.com">begoxcz@hotmail.com</a>
     </li>
     <li>
-        <a href="https://www.linkedin.com/in/tu-url-de-linkedin/">LinkedIn</a>
+        <a href="www.linkedin.com/in/begona-calleja-zardain">LinkedIn</a>
     </li>
     <li>
-        <a href="https://tu-dominio.com/">Porfolio web</a>
+        <a href="www.begocallejazardain.com">Porfolio web</a>
     </li>
 </ul>
 
 ## Link del reto (si es público)
 
-<a href="">Página de frontendmentor</a>
+<a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw">Frontendmentor</a>
 
 ## Instalación
 

@@ -4,10 +4,10 @@ const StyledGeneralContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: flex-start;
+  padding: 0px;
   min-height: 100vh;
-  gap: 70px;
+  gap: 100px;
 
   @media (min-width: 768px) {
     flex-direction: row;

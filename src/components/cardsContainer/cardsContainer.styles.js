@@ -3,7 +3,7 @@ import { COLORS } from '../../styles/color';
 
 export const StyledCardsContainer = styled.div`
   width: 100%;
-  height: 240px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +21,12 @@ export const StyledCardsContainer = styled.div`
     background-size: cover;
     background-position: left;
     padding: 0;
+    gap: 30px;
   }
 `;
 export const StyledFrontCard = styled.div`
   position: absolute;
-  top: 130px;
+  top: 170px;
   left: 20px;
   width: 80%;
   display: flex;
@@ -101,7 +102,7 @@ export const StyledCardDate = styled.span`
 
 export const StyledBackCard = styled.div`
   position: absolute;
-  top: 40px;
+  top: 60px;
   left: 50px;
   z-index: 1;
   width: 80%;
@@ -113,14 +114,14 @@ export const StyledBackCard = styled.div`
 
   @media (min-width: 768px) {
     top: 60%;
-    left: 80%;
+    left: 60%;
     transform: translate(-20%, -20%);
     width: 350px;
   }
 `;
 export const StyledCardCVC = styled.span`
   position: absolute;
-  top: 63px;
+  top: 78px;
   right: 38px;
   font-size: 12px;
   color: ${COLORS.white};

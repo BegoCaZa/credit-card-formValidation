@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { COLORS } from '../../styles/color';
 
 export const StyledFormContainer = styled.div`
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
