@@ -37,7 +37,7 @@ Además, este ejercicio me permitió seguir practicando el manejo de estado en R
         <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React logo">
     </a>
     <a href="https://react-hook-form.com/get-started">
-        <img src="design/react-hook-form-logo-e681fe273970a711a415b1f8ce13871c.png" width="50px" alt="React Hook logo">
+        <img src="design/react-hook-form-logo-e681fe273970a711a415b1f8ce13871c.png" width="60px" alt="React Hook logo">
     </a>
 </p>
 
